@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to Cosmos Wire Solutions</h1>
+        <p class="lead">Your trusted partner in high-quality wire manufacturing.</p>
+        <a href="{{ url_for('about') }}" class="btn btn-light btn-lg">Learn More</a>
+        <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">Contact Us</a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <h2>Quality Assurance</h2>
+            <p>Our products meet international standards for quality and reliability.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h2>Custom Solutions</h2>
+            <p>We provide tailored wire solutions to meet your specific needs.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h2>Global Reach</h2>
+            <p>We serve clients across the globe with timely and efficient delivery.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
