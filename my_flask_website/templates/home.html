@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Welcome Section -->
+    <section class="welcome-section text-center mb-5">
+        <h1>Welcome to Cosmos Wire Solutions</h1>
+        <p class="lead">Your trusted partner in high-quality wire manufacturing.</p>
+    </section>
+
+    <!-- Quality Assurance, Custom Solutions, Global Reach Sections -->
+    <div class="row text-center mb-5">
+        <div class="col-md-4">
+            <h3>Quality Assurance</h3>
+            <p>Our products meet international standards for quality and reliability.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Custom Solutions</h3>
+            <p>We provide tailored wire solutions to meet your specific needs.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Global Reach</h3>
+            <p>We serve clients across the globe with timely and efficient delivery.</p>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section mb-5">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/product1.jpg') }}" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Copper Wires</h5>
+                        <p class="card-text">High-quality copper wires for various industrial applications.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/product2.jpg') }}" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aluminum Wires</h5>
+                        <p class="card-text">Durable aluminum wires for electrical and construction purposes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/product3.jpg') }}" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stainless Steel Wires</h5>
+                        <p class="card-text">Corrosion-resistant stainless steel wires for heavy-duty applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section class="about-section mb-5">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="container">
+        <p class="text-justify">
+            Founded in 2012, <strong>Cosmos Wire Solutions</strong> has emerged as a trusted leader in the wire manufacturing industry. With over a decade of expertise, we specialize in producing high-quality wires that cater to a wide range of industrial, commercial, and residential applications. Our commitment to innovation, precision, and sustainability has positioned us as a preferred partner for clients across the globe.
+        </p>
+        <p class="text-justify">
+            At Cosmos Wire Solutions, we understand that every project has unique requirements. That’s why we offer an extensive portfolio of wires, including <strong>copper wires</strong>, <strong>aluminum wires</strong>, and <strong>stainless steel wires</strong>, each engineered to meet the highest international standards. Whether it’s for electrical wiring, construction, automotive, or heavy-duty industrial use, our products are designed to deliver unmatched performance, durability, and reliability.
+        </p>
+        <p class="text-justify">
+            What sets us apart is our unwavering focus on quality. From raw material selection to the final product, every step of our manufacturing process is meticulously monitored to ensure excellence. Our state-of-the-art facilities, combined with a team of skilled engineers and technicians, enable us to consistently produce wires that exceed customer expectations.
+        </p>
+        <p class="text-justify">
+            Sustainability is at the core of our operations. We are committed to reducing our environmental footprint by adopting eco-friendly practices and using recyclable materials wherever possible. Our dedication to sustainability not only benefits the environment but also ensures that our clients receive products that align with their green initiatives.
+        </p>
+        <p class="text-justify">
+            Over the years, we have built long-lasting relationships with clients in diverse industries, thanks to our customer-centric approach and ability to deliver customized solutions. Whether you need standard wire products or tailor-made solutions, Cosmos Wire Solutions is here to meet your needs with precision and professionalism.
+        </p>
+        <p class="text-justify">
+            As we look to the future, we remain committed to innovation, quality, and customer satisfaction. Our mission is to continue providing cutting-edge wire solutions that power progress and drive success for our clients worldwide. Partner with Cosmos Wire Solutions and experience the difference that quality and expertise can make.
+        </p>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact-section mb-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-6">
+                    <p class="text-center">
+                        Feel free to reach out to us for any inquiries or support. We’re here to help!
+                    </p>
+                    <div class="contact-info text-center">
+                        <p><strong>Email:</strong> info@cosmoswires.com</p>
+                        <p><strong>Phone:</strong> +1 234 567 890</p>
+                        <p><strong>Address:</strong> 123 Wire Solutions Lane, Industrial City, TX 12345, USA</p>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="social-media text-center mt-4">
+                        <p><strong>Follow Us:</strong></p>
+                        <a href="https://www.facebook.com/cosmoswires" target="_blank" class="btn btn-outline-primary me-2">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/cosmoswires" target="_blank" class="btn btn-outline-danger me-2">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.twitter.com/cosmoswires" target="_blank" class="btn btn-outline-info me-2">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://www.youtube.com/cosmoswires" target="_blank" class="btn btn-outline-danger">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                    </div>
+                </div>
+                <!-- Embedded Google Map -->
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6783447999997!2d-118.12345678901234!3d33.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU5JzE1LjQiTiAxMTjCsDA3JzIxLjEiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}

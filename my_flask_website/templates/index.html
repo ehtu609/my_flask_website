@@ -1,30 +1,53 @@
 {% extends "base.html" %}
-{% block content %}
-<!-- Hero Section -->
-<div class="hero-section bg-primary text-white text-center py-5">
-    <div class="container">
-        <h1 class="display-4">Welcome to Cosmos Wire Solutions</h1>
-        <p class="lead">Your trusted partner in high-quality wire manufacturing.</p>
-        <a href="{{ url_for('about') }}" class="btn btn-light btn-lg">Learn More</a>
-        <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">Contact Us</a>
-    </div>
-</div>
 
-<!-- Features Section -->
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-4 text-center">
-            <h2>Quality Assurance</h2>
+{% block content %}
+    <!-- Welcome Section -->
+    <section class="welcome-section text-center mb-5">
+        <h1>Welcome to Cosmos Wire Solutions</h1>
+        <p class="lead">Your trusted partner in high-quality wire manufacturing.</p>
+        <a href="#" class="btn btn-primary me-2">Learn More</a>
+        <a href="#" class="btn btn-outline-secondary">Contact Us</a>
+    </section>
+
+    <!-- Quality Assurance, Custom Solutions, Global Reach Sections -->
+    <div class="row text-center mb-5">
+        <div class="col-md-4">
+            <h3>Quality Assurance</h3>
             <p>Our products meet international standards for quality and reliability.</p>
         </div>
-        <div class="col-md-4 text-center">
-            <h2>Custom Solutions</h2>
+        <div class="col-md-4">
+            <h3>Custom Solutions</h3>
             <p>We provide tailored wire solutions to meet your specific needs.</p>
         </div>
-        <div class="col-md-4 text-center">
-            <h2>Global Reach</h2>
+        <div class="col-md-4">
+            <h3>Global Reach</h3>
             <p>We serve clients across the globe with timely and efficient delivery.</p>
         </div>
     </div>
-</div>
-{% endblock %}
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/product1.jpg') }}" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Copper Wires</h5>
+                        <p class="card-text">High-quality copper wires for various industrial applications.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/product2.jpg') }}" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aluminum Wires</h5>
+                        <p class="card-text">Durable aluminum wires for electrical and construction purposes.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </
